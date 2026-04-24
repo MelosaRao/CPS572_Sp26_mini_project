@@ -104,6 +104,7 @@ def inject_system_prompt(convo: list[dict]) -> list[dict]:
 METAMATH_FILTERED = os.path.join(EVAL_DIR, "metamath_filtered.jsonl")
 MAGICODER_FILTERED = os.path.join(EVAL_DIR, "magicoder_filtered.jsonl")
 WIZARDLM_FILTERED = os.path.join(EVAL_DIR, "wizardlm_filtered.jsonl")
+TULU_FILTERED = os.path.join(EVAL_DIR, "tulu_ifeval_filtered.jsonl")
 
 def load_filtered_jsonl(path: str, run_cmd: str):
     if not os.path.exists(path):
@@ -121,9 +122,11 @@ def build_training_iterator(renderer, max_length):
                  for ex in load_filtered_jsonl(METAMATH_FILTERED, "python evaluation/filter_dataset.py"))
     )
 
-    tulu = load_dataset("allenai/tulu-3-sft-mixture", split="train", streaming=True)
-    tulu = tulu.map(lambda ex: {"conversation": tulu_to_conversation(ex)})
-
+    tulu = IterableDataset.from_generator(
+    lambda: (
+        {"conversation": tulu_to_conversation(ex)}
+        for ex in load_filtered_jsonl(TULU_FILTERED, "python evaluation/filter_tulu_ifeval.py"))
+    )
     wizardlm = IterableDataset.from_generator(
         lambda: ({"conversation": wizardlm_to_conversation(ex)}
                  for ex in load_filtered_jsonl(WIZARDLM_FILTERED, "python evaluation/filter_wizardlm.py"))
