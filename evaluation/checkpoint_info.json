@@ -1,5 +1,5 @@
 {
-  "base_model": "meta-llama/Llama-3.2-3B",
+  "base_model": "meta-llama/Llama-3.1-8B",
   "renderer_name": "role_colon",
   "training": {
     "num_steps": 3000,
@@ -16,37 +16,37 @@
     }
   },
   "published": true,
-  "checkpoint_path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4",
+  "checkpoint_path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5",
   "intermediate_checkpoints": [
     {
       "step": 500,
-      "name": "parameter_tune4_step500",
-      "path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4_step500"
+      "name": "parameter_tune5_step500",
+      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step500"
     },
     {
       "step": 1000,
-      "name": "parameter_tune4_step1000",
-      "path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4_step1000"
+      "name": "parameter_tune5_step1000",
+      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step1000"
     },
     {
       "step": 1500,
-      "name": "parameter_tune4_step1500",
-      "path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4_step1500"
+      "name": "parameter_tune5_step1500",
+      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step1500"
     },
     {
       "step": 2000,
-      "name": "parameter_tune4_step2000",
-      "path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4_step2000"
+      "name": "parameter_tune5_step2000",
+      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step2000"
     },
     {
       "step": 2500,
-      "name": "parameter_tune4_step2500",
-      "path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4_step2500"
+      "name": "parameter_tune5_step2500",
+      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step2500"
     },
     {
       "step": 3000,
-      "name": "parameter_tune4",
-      "path": "tinker://00e0fe58-46e6-5db7-9ea4-a0d37122c428:train:0/sampler_weights/parameter_tune4"
+      "name": "parameter_tune5",
+      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5"
     }
   ]
 }

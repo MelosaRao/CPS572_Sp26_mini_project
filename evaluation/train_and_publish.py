@@ -29,9 +29,9 @@ from tinker_cookbook.tokenizer_utils import get_tokenizer
 from itertools import cycle
 from datasets import interleave_datasets, load_dataset, IterableDataset
 
-MODEL = "meta-llama/Llama-3.2-3B"
+#MODEL = "meta-llama/Llama-3.2-3B"
 #MODEL = "meta-llama/Llama-3.2-1B"    # Smaller, faster for development
-#MODEL = "meta-llama/Llama-3.1-8B"    # Recommended for final submission
+MODEL = "meta-llama/Llama-3.1-8B"    # Recommended for final submission
 
 EVAL_DIR = os.path.dirname(os.path.abspath(__file__))
 
