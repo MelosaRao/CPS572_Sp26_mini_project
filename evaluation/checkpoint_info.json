@@ -10,94 +10,95 @@
     "max_length": 2048,
     "save_every": 250,
     "datasets": {
-      "math": "meta-math/MetaMathQA train, n-gram filtered against GSM8K test (p=0.25, CoT prefix)",
-      "instruction_following": "allenai/tulu-3-sft-mixture train (p=0.40, unfiltered)",
+      "math": "meta-math/MetaMathQA train, n-gram filtered against GSM8K test (p=0.20, CoT prefix)",
+      "instruction_following_tulu": "allenai/tulu-3-sft-mixture train (p=0.30, unfiltered)",
+      "instruction_following_wizard": "WizardLM/WizardLM_evol_instruct_V2_196k train (p=0.15)",
       "code_magicoder": "ise-uiuc/Magicoder-OSS-Instruct-75K train (p=0.15)",
       "code_opencode": "nvidia/OpenCodeInstruct train (p=0.20)"
     }
   },
   "published": true,
-  "checkpoint_path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9",
+  "checkpoint_path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter",
   "intermediate_checkpoints": [
     {
       "step": 250,
-      "name": "tune9_step250",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step250"
+      "name": "parameter_tulu_filter_step250",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step250"
     },
     {
       "step": 500,
-      "name": "tune9_step500",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step500"
+      "name": "parameter_tulu_filter_step500",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step500"
     },
     {
       "step": 750,
-      "name": "tune9_step750",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step750"
+      "name": "parameter_tulu_filter_step750",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step750"
     },
     {
       "step": 1000,
-      "name": "tune9_step1000",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step1000"
+      "name": "parameter_tulu_filter_step1000",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step1000"
     },
     {
       "step": 1250,
-      "name": "tune9_step1250",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step1250"
+      "name": "parameter_tulu_filter_step1250",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step1250"
     },
     {
       "step": 1500,
-      "name": "tune9_step1500",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step1500"
+      "name": "parameter_tulu_filter_step1500",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step1500"
     },
     {
       "step": 1750,
-      "name": "tune9_step1750",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step1750"
+      "name": "parameter_tulu_filter_step1750",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step1750"
     },
     {
       "step": 2000,
-      "name": "tune9_step2000",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step2000"
+      "name": "parameter_tulu_filter_step2000",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step2000"
     },
     {
       "step": 2250,
-      "name": "tune9_step2250",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step2250"
+      "name": "parameter_tulu_filter_step2250",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step2250"
     },
     {
       "step": 2500,
-      "name": "tune9_step2500",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step2500"
+      "name": "parameter_tulu_filter_step2500",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step2500"
     },
     {
       "step": 2750,
-      "name": "tune9_step2750",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step2750"
+      "name": "parameter_tulu_filter_step2750",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step2750"
     },
     {
       "step": 3000,
-      "name": "tune9_step3000",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step3000"
+      "name": "parameter_tulu_filter_step3000",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step3000"
     },
     {
       "step": 3250,
-      "name": "tune9_step3250",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step3250"
+      "name": "parameter_tulu_filter_step3250",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step3250"
     },
     {
       "step": 3500,
-      "name": "tune9_step3500",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step3500"
+      "name": "parameter_tulu_filter_step3500",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step3500"
     },
     {
       "step": 3750,
-      "name": "tune9_step3750",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9_step3750"
+      "name": "parameter_tulu_filter_step3750",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter_step3750"
     },
     {
       "step": 4000,
-      "name": "tune9",
-      "path": "tinker://0f3d282f-8ef3-52b4-8559-5e20f492796c:train:0/sampler_weights/tune9"
+      "name": "parameter_tulu_filter",
+      "path": "tinker://e101a415-2459-5695-992d-a0df63bb3f6f:train:0/sampler_weights/parameter_tulu_filter"
     }
   ]
 }
