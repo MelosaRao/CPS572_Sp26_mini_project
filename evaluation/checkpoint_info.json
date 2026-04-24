@@ -5,48 +5,48 @@
     "num_steps": 3000,
     "batch_size": 8,
     "learning_rate": 3e-05,
-    "learning_rate_schedule": "linear_decay",
     "lora_rank": 64,
-    "max_length": 2048,
+    "max_length": 1536,
     "save_every": 500,
     "datasets": {
       "math": "meta-math/MetaMathQA train, n-gram filtered against GSM8K test (p=0.35, CoT prefix)",
-      "instruction_following": "allenai/tulu-3-sft-mixture train (p=0.45, unfiltered)",
-      "code": "nvidia/OpenCodeInstruct train (p=0.20)"
+      "instruction_following": "allenai/tulu-3-sft-mixture train (p=0.30, unfiltered)",
+      "code_magicoder": "ise-uiuc/Magicoder-OSS-Instruct-75K train (p=0.15)",
+      "code_opencode": "nvidia/OpenCodeInstruct train (p=0.20)"
     }
   },
   "published": true,
-  "checkpoint_path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5",
+  "checkpoint_path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8",
   "intermediate_checkpoints": [
     {
       "step": 500,
-      "name": "parameter_tune5_step500",
-      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step500"
+      "name": "tune8_step500",
+      "path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8_step500"
     },
     {
       "step": 1000,
-      "name": "parameter_tune5_step1000",
-      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step1000"
+      "name": "tune8_step1000",
+      "path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8_step1000"
     },
     {
       "step": 1500,
-      "name": "parameter_tune5_step1500",
-      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step1500"
+      "name": "tune8_step1500",
+      "path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8_step1500"
     },
     {
       "step": 2000,
-      "name": "parameter_tune5_step2000",
-      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step2000"
+      "name": "tune8_step2000",
+      "path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8_step2000"
     },
     {
       "step": 2500,
-      "name": "parameter_tune5_step2500",
-      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5_step2500"
+      "name": "tune8_step2500",
+      "path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8_step2500"
     },
     {
       "step": 3000,
-      "name": "parameter_tune5",
-      "path": "tinker://91703224-7f4d-53a6-a561-e0ea36c8212a:train:0/sampler_weights/parameter_tune5"
+      "name": "tune8",
+      "path": "tinker://e3ce1557-7b09-5365-b6b1-10f63ee73558:train:0/sampler_weights/tune8"
     }
   ]
 }
